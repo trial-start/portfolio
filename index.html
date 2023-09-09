@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Portfolio</title>
+    <!-- Include Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Include your custom CSS file -->
+    <link rel="stylesheet" href="styles/home_style.css" />
+    <script>
+      let prevScrollPos = window.pageYOffset;
+
+      window.onscroll = function () {
+        const currentScrollPos = window.pageYOffset;
+
+        if (prevScrollPos > currentScrollPos) {
+          // User is scrolling up
+          document.querySelector("nav").style.top = "0";
+        } else {
+          // User is scrolling down
+          document.querySelector("nav").style.top = "-100px";
+        }
+
+        prevScrollPos = currentScrollPos;
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="border-bottom: solid 1px black; opacity: 1.1"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">Endrapu Sai Sushanth</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <!-- <section id="home" class="jumbotron text-center bg-dark text-white mt-1">
+      <div class="container" style="min-height: 74vh">
+        <div class="row">
+          <div class="col-lg-6 mx-auto">
+            <h1 class="display-4">Welcome to My Portfolio</h1>
+            <p class="lead">
+              I am a web developer passionate about creating amazing web
+              experiences.
+            </p>
+            <a href="#about" class="btn btn-primary btn-lg">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section id="home" class="jumbotron text-center bg-dark text-white">
+      <div class="container" style="min-height: 64vh; margin-top: 140px">
+        <div class="row">
+          <div class="col-lg-6 mx-auto">
+            <h1 class="display-4">Welcome to My Portfolio</h1>
+            <p class="lead">
+              I am a web developer passionate about creating amazing web
+              experiences.
+            </p>
+            <a href="#about" class="btn btn-primary btn-lg">Learn More</a>
+          </div>
+        </div>
+        <!-- Additional elements -->
+        <div class="row mt-5">
+          <div class="col-lg-4 mb-3">
+            <div class="card border-0">
+              <div class="card-body">
+                <h5 class="card-title text-dark">What I Do</h5>
+                <p class="card-text text-dark">
+                  I design and develop beautiful and functional websites and web
+                  applications.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="card border-0">
+              <div class="card-body">
+                <h5 class="card-title text-dark">My Expertise</h5>
+                <p class="card-text text-dark">
+                  I specialize in HTML, CSS, JavaScript, React, and more.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="card border-0">
+              <div class="card-body">
+                <h5 class="card-title text-dark">Get in Touch</h5>
+                <p class="card-text text-dark">
+                  Feel free to contact me for any inquiries or collaborations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-center">
+            <img
+              src="images/my_profile_pic.jpg"
+              alt="Profile Picture"
+              class="img-fluid rounded-circle shadow-lg mb-4"
+              style="max-width: 300px; margin-top: 30px"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h2 class="display-4">Who am I?</h2>
+            <p class="lead">
+              I am a student currently pursuing my second year in Computer
+              Science at Chaitanya Bharati Institute of Technology. With a
+              passion for creating dynamic and engaging web applications, I have
+              honed my skills in HTML, CSS, JavaScript, and React.
+            </p>
+            <p>
+              Additionally, I have gained practical experience through an
+              internship at Smart Knower, where I focused on Android app
+              development using Flutter. I am dedicated to continuous learning
+              and eager to contribute my expertise to innovative projects.
+            </p>
+            <h2 class="display-4 mt-4">Education</h2>
+            <ul class="list-group">
+              <li class="list-group-item">
+                Bachelor's Degree in Computer Science
+              </li>
+              <li class="list-group-item">
+                Chaitanya Bharati Institute of Technology, 2021-2025
+              </li>
+            </ul>
+            <h2 class="display-4 mt-4">Experience</h2>
+            <ul class="list-group">
+              <li class="list-group-item">Intern at Smart Knower (2 months)</li>
+            </ul>
+            <!-- <h2 class="display-4 mt-4">Interests</h2>
+            <ul class="list-group">
+              <li class="list-group-item">Web Development</li>
+              <li class="list-group-item">Artificial Intelligence</li>
+              <li class="list-group-item">Machine Learning</li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section
+      id="skills"
+      class="py-5 bg-dark text-white"
+      style="min-height: 90vh"
+    >
+      <div class="container">
+        <h2 class="text-center">My Skills</h2>
+        <div class="row">
+          <!-- Skill Category 1 -->
+          <div class="col-md-4 mb-4 mt-4">
+            <div class="card-skill border-0 skill-card">
+              <div class="card-body">
+                <i class="fas fa-paint-brush fa-3x mb-3"></i>
+                <!-- FontAwesome icon -->
+                <h3 class="card-title-skills text-light">Web Design</h3>
+                <p class="card-text-skills">
+                  I specialize in creating visually appealing and user-friendly
+                  web designs.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category 2 -->
+          <div class="col-md-4 mb-4 mt-4">
+            <div class="card-skill border-0 skill-card">
+              <div class="card-body">
+                <i class="fas fa-code fa-3x mb-3"></i>
+                <!-- FontAwesome icon -->
+                <h3 class="card-title-skills text-light">
+                  Front-End Development
+                </h3>
+                <p class="card-text-skills">
+                  I excel in front-end development with expertise in HTML, CSS,
+                  and JavaScript.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category 3 -->
+          <div class="col-md-4 mb-4 mt-4">
+            <div class="card-skill border-0 skill-card">
+              <div class="card-body">
+                <i class="fas fa-server fa-3x mb-3"></i>
+                <!-- FontAwesome icon -->
+                <h3 class="card-title-skills text-light">
+                  Back-End Development
+                </h3>
+                <p class="card-text-skills">
+                  I have experience in back-end development and database
+                  management.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Skill Categories -->
+          <div class="col-md-4 mb-4 mt-4">
+            <div class="card-skill border-0 skill-card">
+              <div class="card-body">
+                <i class="fas fa-mobile-alt fa-3x mb-3"></i>
+                <!-- FontAwesome icon -->
+                <h3 class="card-title-skills text-light">
+                  Mobile App Development
+                </h3>
+                <p class="card-text-skills">
+                  I create mobile apps for both Android and iOS platforms.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4 mt-4">
+            <div class="card-skill border-0 skill-card">
+              <div class="card-body">
+                <i class="fas fa-database fa-3x mb-3"></i>
+                <!-- FontAwesome icon -->
+                <h3 class="card-title-skills text-light">
+                  Database Management
+                </h3>
+                <p class="card-text-skills">
+                  I manage databases and optimize data storage.bnbbbbhhjhjgj
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4 mt-4 mt-4">
+            <div class="card-skill border-0 skill-card">
+              <div class="card-body">
+                <i class="fas fa-cogs fa-3x mb-3"></i>
+                <!-- FontAwesome icon -->
+                <h3 class="card-title-skills text-light">DevOps</h3>
+                <p class="card-text-skills">
+                  I work with DevOps tools for continuous integration and
+                  deployment.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- End of Additional Skill Categories -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center">My Projects</h2>
+        <div class="row">
+          <!-- Project 1 -->
+          <div class="col-md-4 mb-4 mt-4">
+            <div class="card border-0">
+              <img
+                src="images/project1_img.png"
+                class="card-img-top"
+                alt="Project 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Adobe clone</h5>
+                <p class="card-text">
+                  Technologies used: HTML, CSS, JavaScript
+                </p>
+                <a href="projects/project1.html" class="btn btn-primary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="col-md-4 mb-4 mt-4">
+            <div class="card border-0">
+              <img
+                src="images/project2_img.png"
+                class="card-img-top"
+                alt="Project 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Emojipedia</h5>
+                <p class="card-text">Technologies used: HTML,CSS,React.js</p>
+                <a href="projects/project2.html" class="btn btn-primary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="col-md-4 mb-4 mt-4">
+            <div class="card border-0">
+              <img
+                src="images/project3_img.png"
+                class="card-img-top"
+                alt="Project 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">To Do List</h5>
+                <p class="card-text">Technologies used: HTML, CSS,React.js</p>
+                <a href="projects/project3.html" class="btn btn-primary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add three more projects here -->
+          <!-- Project 4 -->
+          <div class="col-md-4 mb-4 mt-4">
+            <div class="card border-0">
+              <img
+                src="images/project4_img.png"
+                class="card-img-top"
+                alt="Project 4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Keeper</h5>
+                <p class="card-text">Technologies used: HTML, CSS,React.js</p>
+                <a href="projects/project4.html" class="btn btn-primary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project 5 -->
+          <div class="col-md-4 mb-4 mt-4">
+            <div class="card border-0">
+              <img src="img1(home).jpg" class="card-img-top" alt="Project 5" />
+              <div class="card-body">
+                <h5 class="card-title">Project 5</h5>
+                <p class="card-text">Description of Project 5 goes here.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 6 -->
+          <div class="col-md-4 mb-4 mt-4">
+            <div class="card border-0">
+              <img src="img1(home).jpg" class="card-img-top" alt="Project 6" />
+              <div class="card-body">
+                <h5 class="card-title">Project 6</h5>
+                <p class="card-text">Description of Project 6 goes here.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="py-5 bg-dark text-white"
+      style="min-height: 90vh"
+    >
+      <div class="container">
+        <h2 class="text-center mb-5">Contact Me</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Get in Touch</h3>
+            <p>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="text-white"
+                >LinkedIn</a
+              >
+            </p>
+            <p>
+              <a href="https://github.com/" target="_blank" class="text-white"
+                >GitHub</a
+              >
+            </p>
+          </div>
+          <div class="col-md-6">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-1">
+      &copy; 2023 E.Sai Sushanth
+    </footer>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
