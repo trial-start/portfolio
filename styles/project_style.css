@@ -101,3 +101,10 @@ section#project-details a:hover {
   outline: none;
   box-shadow: 0 0 0 3px #ff7f50;
 }
+/* Media query for screens with a maximum width of 767px (typical for mobile devices) */
+@media (max-width: 600px) {
+  .styled-button {
+    padding: 10px 15px;
+    font-size: 17px;
+  }
+}
