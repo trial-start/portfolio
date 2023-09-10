@@ -108,3 +108,26 @@ section#project-details a:hover {
     font-size: 17px;
   }
 }
+
+/* project_style.css */
+
+#project-gallery {
+  background-color: #1d2226;
+  padding: 10px 0;
+}
+
+.gallery-item {
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border: 1px white solid;
+}
+
+.cen {
+  text-align: center;
+  margin-bottom: 25px;
+}

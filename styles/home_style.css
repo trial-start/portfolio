@@ -123,6 +123,18 @@
   font-weight: bold;
 }
 
+.card-title {
+  font-weight: bold;
+  /* padding: 10px; */
+  /* border-radius: 5px; */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Add transition effect for background color and text color */
+}
+
+.card-title:hover {
+  color: orange;
+}
+
 .card-text {
   font-size: 1rem;
 }
@@ -177,3 +189,71 @@ ul.list-group-item:hover {
 }
 
 /* Add more custom styles as needed */
+
+section#contact {
+  background-color: #1d2226;
+  padding: 20px;
+  /* margin-bottom: 20px; */
+  border-radius: 5px;
+}
+
+section#contact h2 {
+  color: #fff;
+  margin-top: 0;
+}
+
+section#contact p {
+  margin-bottom: 10px;
+}
+
+section#contact a {
+  color: #007bff;
+  text-decoration: none;
+  transition: text-decoration 0.3s;
+}
+
+section#contact a:hover {
+  text-decoration: none; /* Remove underline on hover */
+  color: #ff7f50; /* Change color on hover */
+}
+
+footer {
+  background-color: black;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+/* Additional styling for the "Get in Touch" section */
+.get-in-touch {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Add any additional styling for the form fields and button here */
+.form-group label {
+  color: #fff;
+}
+
+.form-control {
+  background-color: #333;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.form-control:focus {
+  background-color: #333;
+  color: #fff;
+  border-color: #ff7f50;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #ff7f50;
+}
